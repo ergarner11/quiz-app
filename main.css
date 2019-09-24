@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/background.jpg");
+    background: cover;
+    font-family: 'Varela', sans-serif;
+    font-size: 20px;
+}
+
+header, main {
+    background-color: beige;
+    border: none;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    margin:0;
+}
+
+main {
+    position: relative;
+    top: 20px;
+}
+
+.js-question-tracker {
+    float: left;
+}
+
+.js-score-tracker {
+    float: right;
+}
+
+form {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+form > label {
+    display: block;
+    align-self: flex-start;
+}
+
+form > button {
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: rgb(204, 204, 204);
+    padding: 5px;
+}
+
+.feedback {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:500px){
+    header {
+        width: 450px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    main {
+        width: 450px;
+        height: 300px;
+    }
+
+    form {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:500px) and (min-width:0px){
+    body {        
+        font-size: 16px;
+    }
+
+    header {
+        width: 90%;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    main {
+        width: 90%;
+        height: 250px;
+    }
+
+    form {
+        height: 250px;
+    }
+
+    .feedback {
+        font-size: 20px;
+    }
+}
